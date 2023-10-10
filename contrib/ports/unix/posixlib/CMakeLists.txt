@@ -14,6 +14,8 @@ if (NOT CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(FATAL_ERROR "Lwip shared library is only working on Linux or the Hurd")
 endif()
 
+set(LWIP_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../..)
+
 find_library(LIB_VDEPLUGOK vdeplug)
 check_include_file(libvdeplug.h INCLUDE_VDEPLUGOK)
 if (LIB_VDEPLUGOK AND INCLUDE_VDEPLUGOK)
@@ -30,7 +32,7 @@ set (LWIP_INCLUDE_DIRS
     "${LWIP_DIR}/src/include"
     "${LWIP_CONTRIB_DIR}/"
     "${LWIP_CONTRIB_DIR}/ports/unix/port/include"
-    "${CMAKE_CURRENT_SOURCE_DIR}/"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/posix"
 )
 
 set (LWIP_EXCLUDE_SLIPIF TRUE)
