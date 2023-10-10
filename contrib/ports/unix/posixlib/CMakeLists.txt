@@ -32,6 +32,7 @@ set (LWIP_INCLUDE_DIRS
     "${LWIP_DIR}/src/include"
     "${LWIP_CONTRIB_DIR}/"
     "${LWIP_CONTRIB_DIR}/ports/unix/port/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/posix"
 )
 
