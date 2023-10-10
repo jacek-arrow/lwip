@@ -56,7 +56,7 @@ endif()
 find_library(LIBPTHREAD pthread)
 target_link_libraries(lwip ${LIBPTHREAD})
 
-install(TARGETS lwip 
+install(TARGETS lwip
 		LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
 set_target_properties(lwip PROPERTIES VERSION ${PROJECT_VERSION}
@@ -89,6 +89,5 @@ install(DIRECTORY "${LWIP_DIR}/contrib/ports/unix/posixlib/include/posix"
     FILES_MATCHING PATTERN "*.h"
 )
 
-add_custom_target(uninstall
+add_custom_target(uninstall-lwip
   "${CMAKE_COMMAND}" -P "${PROJECT_SOURCE_DIR}/Uninstall.cmake")
-
