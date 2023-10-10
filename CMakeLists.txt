@@ -4,7 +4,8 @@ set (CMAKE_CONFIGURATION_TYPES "Debug;Release")
 
 project(lwIP)
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/contrib/ports/unix/lib)
+# add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/contrib/ports/unix/lib)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/contrib/ports/unix/posixlib)
 
 # Source package generation
 set(CPACK_SOURCE_GENERATOR "ZIP")
