@@ -31,7 +31,7 @@
 #define NO_SYS    0
 
 /* Sockets API config */
-#define LWIP_COMPAT_SOCKETS       1
+#define LWIP_COMPAT_SOCKETS       0
 #define LWIP_SOCKET_OFFSET        1
 #define LWIP_POLL                 1
 
