@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 Joan Lledó <jlledom@member.fsf.org>
+ * Copyright (C) 2023 Joan Lledï¿½ <jlledom@member.fsf.org>
  *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
@@ -31,7 +31,7 @@
 #define NO_SYS    0
 
 /* Sockets API config */
-#define LWIP_COMPAT_SOCKETS       0
+#define LWIP_COMPAT_SOCKETS       1
 #define LWIP_SOCKET_OFFSET        1
 #define LWIP_POLL                 1
 
