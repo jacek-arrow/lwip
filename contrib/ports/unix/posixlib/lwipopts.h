@@ -116,7 +116,7 @@
 #define LWIP_NOASSERT_ON_ERROR   1
 
 /* Threading options */
-/* #define LWIP_TCPIP_CORE_LOCKING   1 */
+#define LWIP_TCPIP_CORE_LOCKING   1
 
 /* If the system is 64 bit */
 #if defined __LP64__
