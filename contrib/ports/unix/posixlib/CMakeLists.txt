@@ -54,8 +54,8 @@ else()
    target_link_libraries(lwip ${LWIP_SANITIZER_LIBS})
 endif()
 
-find_library(LIBPTHREAD pthread)
-target_link_libraries(lwip ${LIBPTHREAD})
+# find_library(LIBPTHREAD pthread)
+# target_link_libraries(lwip ${LIBPTHREAD})
 
 install(TARGETS lwip
 		LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
