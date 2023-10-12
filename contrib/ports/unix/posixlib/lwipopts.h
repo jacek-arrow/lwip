@@ -36,7 +36,7 @@
 #define LWIP_POLL                 1
 
 /* User posix socket headers */
-#define LWIP_SOCKET_EXTERNAL_HEADERS            1
+/* #define LWIP_SOCKET_EXTERNAL_HEADERS            1 */
 #define LWIP_SOCKET_EXTERNAL_HEADER_SOCKETS_H   "posix/sockets.h"
 #define LWIP_SOCKET_EXTERNAL_HEADER_INET_H      "posix/inet.h"
 #define LWIP_DONT_PROVIDE_BYTEORDER_FUNCTIONS   1

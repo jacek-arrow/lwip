@@ -432,18 +432,4 @@ void sys_check_core_locking(void);
 #define LWIP_ASSERT_CORE_LOCKED()  sys_check_core_locking()
 #endif
 
-/* Enable modules */
-#define LWIP_ARP              1
-#define LWIP_ETHERNET         1
-#define LWIP_IPV4             1
-#define LWIP_ICMP             1
-#define LWIP_IGMP             1
-#define LWIP_RAW              1
-#define LWIP_UDP              1
-#define LWIP_UDPLITE          1
-#define LWIP_TCP              1
-#define LWIP_IPV6             1
-#define LWIP_ICMP6            1
-#define LWIP_IPV6_MLD         1
-
 #endif /* LWIP_LWIPOPTS_H */
