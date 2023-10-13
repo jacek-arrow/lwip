@@ -43,7 +43,7 @@ set(lwipnoapps_SRCS ${lwipnoapps_SRCS}
    ${LWIP_DIR}/contrib/ports/unix/port/netif/vdeif.c)
 endif()
 
-add_library(lwip STATIC ${lwipnoapps_SRCS} ${lwipcontribportunix_SRCS} ${lwipcontribportunixnetifs_SRCS})
+add_library(lwip ${lwipnoapps_SRCS} ${lwipcontribportunix_SRCS} ${lwipcontribportunixnetifs_SRCS})
 target_compile_options(lwip PRIVATE ${LWIP_COMPILER_FLAGS})
 target_compile_definitions(lwip PRIVATE ${LWIP_DEFINITIONS} ${LWIP_MBEDTLS_DEFINITIONS})
 target_include_directories(lwip PUBLIC ${LWIP_INCLUDE_DIRS} ${LWIP_MBEDTLS_INCLUDE_DIRS})
