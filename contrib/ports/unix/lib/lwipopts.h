@@ -343,6 +343,7 @@
 
 #define LWIP_LISTEN_BACKLOG             0
 
+#define LWIP_IPV6                       1
 /*
    ----------------------------------
    ---------- Pbuf options ----------
