@@ -7,7 +7,7 @@ project(lwIP)
 # Example lwIP application
 set(LWIP_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-add_subdirectory(${LWIP_DIR}/contrib/ports/unix/posixlib)
+add_subdirectory(${LWIP_DIR}/contrib/ports/unix/lib)
 
 # Source package generation
 set(CPACK_SOURCE_GENERATOR "ZIP")
